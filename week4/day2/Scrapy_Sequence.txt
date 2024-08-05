@@ -1,0 +1,23 @@
+1. Create Folder on Desktop Manually (Directory or path can be change)
+1.2. Change terminal in VS_Code to command prompt (pip install scrapy)
+2.Open VS_Code -> go to folder you created (with 'cd' (change directory) command)
+4.run command: 
+	scrapy startproject [project_name]
+5.go to 'Spider' folder that created automatically ( with 'cd' command)
+6.run command: 
+whole link= http://quotes.toscrape.com/
+	scrapy genspider [name_of_spider without .py] [whole link]
+7. '.py' file created in Spider folder write your codes in 'Parse' section
+8. After code structure is ready, and you are in project folder,
+   8.1. run command: 
+	>scrapy crawl [name_of_spider] -o data.json     
+        above command will save scraped file
+
+General info:
+Response 200 is okay
+Response 400 is error and fail
+
+Hints: Open Project folder in VS_Code:
+-Bot escape - chrome agent from setting of spider
+-Change language - utf-8
+

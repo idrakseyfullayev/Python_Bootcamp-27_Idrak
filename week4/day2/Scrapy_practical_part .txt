@@ -1,0 +1,19 @@
+﻿Practical Part (Should be run on Command Prompt)
+
+
+-  scrapy shell
+-  fetch("http://quotes.toscrape.com")  
+-  view(response)
+-  print(response.text)
+-  response.xpath("/html").extract() 
+-  response.xpath("/html//div").extract()  
+-  response.xpath("//div").extract_first()  
+-  response.css(".quote::text").get()     
+-  response.css(".quote").extract_first() 
+-  response.css(".quote span").extract_first()   
+-  response.css(".quote span::text").extract_first()  
+-  response.css(".quote span").attrib["itemprop"]   
+-  response.css(".quote span").xpath("@itemprop").get() 
+-  response.xpath("//div[@class='quote']/span[@class='text']").extract_first() 
+  
+-   response.selector.remove_namespaces()
